@@ -331,6 +331,13 @@
    --lh-md: 120%;
    --lh-lg: 130%;
    --lh-xl: 141%;
+
+   
+  --base-radius: 10px;
+
+  --fixed-padding: 150px 0;
+
+  --variable-padding: 283px 0 150px;
 }
 
 /* ===========================
