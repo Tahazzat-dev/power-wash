@@ -210,27 +210,27 @@
     line-height: 0;
     height: 0;
   }
-  a img {
+  /* a img {
     border: 0;
     width: auto;
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
     border-style: none;
-  }
+  } */
   a,
   input,
   select,
   textarea {
     outline: none;
   }
-  img {
+  /* img {
     width: auto;
     height: auto;
     max-width: 100%;
     vertical-align: bottom;
     border-style: none;
-  }
+  } */
   
   /* Selection colours (easy to forget) */
   img::selection {
@@ -306,7 +306,7 @@
   --section-gutter-lg:150px;
 
   /* ===== max width ======== */
-  --container-width-large: 1320px;
+  --container-width-large: 1313px;
 
   /* ====== border radius ======= */
   --border-radius: 4px;
@@ -442,10 +442,8 @@
   flex-shrink: 2;   
 }
 
-.grid {
-    display: -ms-grid;
-    display: grid;
-  }
+
+
 
 .text-center{
     text-align: center;
@@ -459,6 +457,7 @@
  height: 6px;
  border-radius: 10px;
  border: none;
+ margin: 40px 0px;
 }
 
 .pw_divider::before,
@@ -552,6 +551,7 @@ h2{
   line-height: var(--lh-full);
 }
 
+
 h3{
   font-size: 32.336px;
   line-height: var(--lh-normal);
@@ -600,9 +600,10 @@ p{
  }
 
 
+ 
 
  /* resuable layouts */
- .pw_service-gallery{
+ /* .pw_service-gallery{
   gap: 20px;
   width: 100%;
  }
@@ -665,8 +666,8 @@ width: 50%;
  .pw_service-card-large img,
  .pw_service-card-large picture{
   /* max-height: 347px; */
- }
-
+ /* } */
+/* 
  .pw_service-card-large{
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -757,11 +758,11 @@ width: 50%;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */ 
 
 
   /* ===== our goals starts ====== */
-  .pw_our-goals{
+  /* .pw_our-goals{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -808,7 +809,7 @@ width: 50%;
 
   /* ===== our goals ends ====== */
   /* ===== our what our customer say starts ====== */
-  .pw_our-customers-opinions{
+  /* .pw_our-customers-opinions{
   gap: 30px;
   }
 
@@ -833,7 +834,7 @@ width: 50%;
 
   .pw_our-customers-comments{
 
-  }
+  } */ 
 
   /* ===== our what our customer say ends ====== */
   
@@ -841,13 +842,104 @@ width: 50%;
 
 @media (max-width: 1600px) {
   /* Styles for large desktop screens */
+   
+/*======= font sizes ======== */
+h1{
+  font-size:67px; /* will decrese by 13px by each breakpoint */
+  
 }
+
+h2{
+  font-size: 42px; /* will decrese by 6px by each breakpoint */
+  
+}
+
+
+h3{
+  font-size: 28px;
+  line-height: var(--lh-normal);
+  font-weight: var(--fw-bold);
+}
+
+h4{
+  font-size: 19.5px; /* will increase by 0.5px by each breakpoint */
+ 
+}
+
+h5{
+  font-size: 20px; /* will decrese by 5px by each breakpoint */
+  
+}
+
+h6{
+  font-size: 18px;
+
+}
+
+
+
+
+.pw_section-title{
+  font-size: 46px; /* will decrese by 6px by each breakpoint */
+ 
+ }
+ 
+ .pw_section-des{
+   font-size: 20px; 
+  
+ }
+
+
+}
+
 
 @media (max-width: 1280px) {
   /* Styles for large desktop monitors or laptops */
+  h1{
+    font-size:54px; /* will decrese by 13px by each breakpoint */
+    
+  }
+  
+  h2{
+    font-size: 36px; /* will decrese by 6px by each breakpoint */
+    
+  }
+  
+  
+  h3{
+    font-size: 26px;
+
+  }
+  
+  h4{
+    font-size: 19px; /* will increase by 0.5px by each breakpoint */
+   
+  }
+  
+  h5{
+    font-size: 20px; /* will decrese by 5px by each breakpoint */
+    
+  }
+  
+
+  
+  
+  .pw_section-title{
+    font-size: 36px; /* will decrese by 6px by each breakpoint */
+   
+   }
+   
+   .pw_section-des{
+     font-size: 19px; 
+    
+   }
+
+
 }
 
 @media (max-width: 1024px) {
+
+  
   .desk{
     display: none;
   }
@@ -865,9 +957,58 @@ width: 50%;
   .pw_service-card.large h4{
     margin-top:5px;
   }
+
+  h1{
+    font-size:41px; /* will decrese by 13px by each breakpoint */
+    
+  }
+  
+  h2{
+    font-size: 30px; /* will decrese by 6px by each breakpoint */
+    
+  }
+  
+  
+  h3{
+    font-size: 24px;
+
+  }
+  
+  h4{
+    font-size: 18.5px; /* will increase by 0.5px by each breakpoint */
+   
+  }
+  
+  h5{
+    font-size: 20px; /* will decrese by 5px by each breakpoint */
+    
+  }
+  
+
+  
+  
+  .pw_section-title{
+    font-size: 30px; /* will decrese by 6px by each breakpoint */
+   
+   }
+   
+   .pw_section-des{
+     font-size: 18px; 
+    
+   }
+
+
+
 }
 
 @media (max-width: 768px) {
+
+  /*======= font sizes ======== */
+
+  .pw_divider{
+    
+    margin: 30px 0px;
+   }
 
   .mobi{
     display: block;
@@ -1103,7 +1244,3 @@ h6{
 
 
 
-/* temporary styles */
-body{
-  padding: 200px 0;
-}
