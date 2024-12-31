@@ -1717,6 +1717,10 @@ linear-gradient(0deg, rgba(5, 13, 4, 0.4), rgba(5, 13, 4, 0.4));
   position: relative;
 }
 
+.testimonials-cards-container .reviews-card {
+  margin: 24px 0;
+}
+
 .testimonials-btn-container {
   width: 100%;
   margin-top: 50px;
@@ -1855,6 +1859,7 @@ linear-gradient(0deg, rgba(5, 13, 4, 0.4), rgba(5, 13, 4, 0.4));
 
   .testimonials-cards-container .reviews-card {
     position: absolute;
+    margin: 0;
   }
 
   .testimonials-cards-container .reviews-card:first-child {
