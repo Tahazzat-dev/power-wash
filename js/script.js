@@ -17,25 +17,24 @@ const excellenceBtns = document.querySelectorAll(
 );
 
 function updateNavOnScroll(scrollY) {
-  if (scrollY > 250) applyFixedNavStyles();
+  if (scrollY > 350) applyFixedNavStyles();
   else resetNavStyles();
 }
 
 function applyFixedNavStyles() {
   if (navbar && logo) {
-    navbar.style.position = 'fixed';
     logo.setAttribute('width', '105px');
     logo.setAttribute('height', '108px');
-    navbar.style.background = '#050D04';
+    navbar.classList.add('scroll-nav')
   }
 }
 
 function resetNavStyles() {
   if (navbar && logo) {
-    navbar.style.position = 'absolute';
     logo.setAttribute('width', '229px');
-    logo.setAttribute('height', '234px');
-    navbar.style.background = 'transparent';
+    logo.setAttribute('height', '234px')
+    navbar.classList.remove('scroll-nav')
+    ;
   }
 }
 window.addEventListener('scroll', function () {
@@ -62,12 +61,10 @@ window.addEventListener('scroll', function () {
 
 function applyResNavStyles() {
   responsiveNav.style.position = 'fixed';
-  responsiveNav.style.background = '#050D04';
 }
 
 function resetResNavStyles() {
   responsiveNav.style.position = 'absolute';
-  responsiveNav.style.background = 'transparent';
 }
 
 function navListController() {
