@@ -153,6 +153,7 @@ button {
   right: 0;
   z-index: 10;
   transition: all 0.3s;
+  background-color: var(--clr-onyx-green);
   display: none;
   align-items: center;
   justify-content: space-between;
@@ -220,9 +221,9 @@ button {
 .hero {
   height: 990px;
   width: 100%;
-  background: linear-gradient(0deg, rgba(5, 13, 4, 0.40) 0%, rgba(5, 13, 4, 0.40) 100%), linear-gradient(0deg, rgba(20, 33, 61, 0.10) 0%, rgba(20, 33, 61, 0.10) 100%);
-  background-blend-mode: plus-darker, plus-darker;
-
+  background: linear-gradient(0deg, rgba(20, 33, 61, 0.1), rgba(20, 33, 61, 0.1)),
+linear-gradient(0deg, rgba(5, 13, 4, 0.4), rgba(5, 13, 4, 0.4));
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -318,6 +319,10 @@ button {
 .services {
   background-color: var(--clr-eggshell);
   padding-top: 150px;
+}
+
+.services-padding-top{
+  padding-top: 284px;
 }
 
 .services-title-container {
@@ -2226,7 +2231,7 @@ button {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 26px;
-    border-bottom: 2px solid var(--clr-white);
+    /* border-bottom: 2px solid var(--clr-white); */
   }
 
   .secondary-footer p {
@@ -2375,6 +2380,11 @@ button {
     padding-top: 100px;
   }
 
+  .services-padding-top{
+    padding-top: 120px;
+  }
+  
+
   .service-card-container {
     padding-top: 50px;
   }
@@ -2404,10 +2414,6 @@ button {
   .standout-options-card h4 {
     font-size: 18px;
     margin: 0 0 15px 0;
-  }
-
-  .services-img-cards-container {
-    grid-template-columns: 1fr;
   }
 
   .reviews {
@@ -2477,6 +2483,10 @@ button {
   .contact-form-services-radio-container {
     margin: 14px 0 30px;
     gap: 14px;
+  }
+
+  .contact-form-container form > *{
+    flex: 1 1 50%
   }
 
   .contact-btn-container {
@@ -2784,6 +2794,11 @@ button {
 }
 
 @media only screen and (max-width: 310px) {
+
+  .services-img-cards-container {
+    grid-template-columns: 1fr;
+  }
+
   .standout-options-card {
     grid-template-columns: 1fr;
     gap: 0;

@@ -61,12 +61,10 @@ window.addEventListener('scroll', function () {
 
 function applyResNavStyles() {
   responsiveNav.style.position = 'fixed';
-  responsiveNav.style.background = '#050D04';
 }
 
 function resetResNavStyles() {
   responsiveNav.style.position = 'absolute';
-  responsiveNav.style.background = 'transparent';
 }
 
 function navListController() {
